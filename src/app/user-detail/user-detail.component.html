@@ -1,0 +1,25 @@
+<div [style.font-size]="isSpecial ? '40px' : '8px'">
+    <h3 class ="card-title1" [style.color]="'green'">hello {{Users.firstname}} {{Users.lastname}}.</h3>
+    <h3 class ="card-title2">your Username {{Users.Username}}</h3>
+    <h3 class ="card-title3">your password {{Users.password}}</h3>
+    
+    
+</div>
+
+<div [ngStyle]="currentStyles">
+    <h3 >hello {{Users.firstname}} {{Users.lastname}}.</h3>
+    <h3 >your Username {{Users.Username}}</h3>
+    <h3 >your password {{Users.password}}</h3>
+    
+</div>
+
+<div [style.font-size]="isSpecial ? '40px' : '8px'">
+    <h3 [class.card-title4] ="canSave">hello {{Users.firstname}} {{Users.lastname}}.</h3>
+    <h3 >your Username {{Users.Username}}</h3>
+    <h3 >your password {{Users.password}}</h3>
+</div>
+
+<div [ngClass] ="myClasses" >amazing,but not WOW!</div>
+<div [ngClass] ="myClasses" >Wow,but not Amazing!</div>
+
+
